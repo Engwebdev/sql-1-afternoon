@@ -476,7 +476,7 @@ SELECT Count(*) FROM Invoice WHERE BillingState in ('CA', 'TX', 'AZ');
 ```
 
 </details>
-
+SELECT Count(*) FROM Invoice WHERE BillingState in ('CA', 'TX', 'AZ');
 <details>
 
 <summary> <code> #7 </code> </summary>
