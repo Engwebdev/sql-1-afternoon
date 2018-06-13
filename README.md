@@ -258,7 +258,7 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID = 0;
 ```
 
 </details>
-
+SELECT  SUM(Quantity * ProductPrice) FROM Orders WHERE PersonalID=10;
 </details>
 
 ## Table - Artist
@@ -286,7 +286,7 @@ INSERT INTO Artist ( Name ) VALUES ( 'artist name' );
 ```
 
 </details>
-
+INSERT INTO Artist ( Name ) VALUES ( "P!nk" );
 <details>
 
 <summary> <code> #2 </code> </summary>
