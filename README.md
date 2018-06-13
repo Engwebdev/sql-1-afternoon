@@ -86,7 +86,7 @@ SELECT * FROM Person ORDER BY Age DESC;
 ```
 
 </details>
-
+SELECT * FROM Person ORDER BY Age DESC
 <details>
 
 <summary> <code> #6 </code> </summary>
