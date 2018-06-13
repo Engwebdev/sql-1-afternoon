@@ -296,7 +296,7 @@ SELECT * FROM Artist ORDER BY Name Desc LIMIT 10;
 ```
 
 </details>
-
+SELECT * FROM Artist ORDER BY Name DESC LIMIT 10;
 <details>
 
 <summary> <code> #3 </code> </summary>
