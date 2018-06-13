@@ -395,7 +395,7 @@ SELECT COUNT(*) FROM Employee WHERE City = "Lethbridge";
 ```
 
 </details>
-
+SELECT count(*) FROM Employee WHERE City="Lethbridge";
 </details>
 
 ## Table - Invoice
