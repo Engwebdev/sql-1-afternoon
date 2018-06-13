@@ -426,7 +426,7 @@ SELECT Count(*) FROM Invoice WHERE BillingCountry = 'USA';
 ```
 
 </details>
-
+SELECT count(*) FROM Invoice WHERE BillingCountry = 'USA';
 <details>
 
 <summary> <code> #2 </code> </summary>
