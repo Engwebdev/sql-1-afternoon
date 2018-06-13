@@ -326,7 +326,7 @@ SELECT * FROM Artist WHERE Name LIKE '%Black%';
 ```
 
 </details>
-
+SELECT * FROM Artist WHERE Name LIKE "%Black%";
 </details>
 
 ## Table - Employee
