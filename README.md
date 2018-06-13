@@ -237,7 +237,7 @@ SELECT SUM(Quantity) FROM Orders;
 ```
 
 </details>
-
+SELECT  SUM(Quantity) FROM Orders;
 <details>
 
 <summary> <code> #5 </code> </summary>
