@@ -436,7 +436,7 @@ SELECT Max(total) FROM Invoice;
 ```
 
 </details>
-
+SELECT MAX(total) FROM Invoice;
 <details>
 
 <summary> <code> #3 </code> </summary>
