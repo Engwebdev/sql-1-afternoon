@@ -76,7 +76,7 @@ SELECT * FROM Person ORDER BY Height ASC;
 ```
 
 </details>
-
+SELECT * FROM Person ORDER BY Height ASC
 <details>
 
 <summary> <code> #5 </code> </summary>
