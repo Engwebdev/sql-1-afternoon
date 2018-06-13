@@ -176,7 +176,7 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" )
 ```
 
 </details>
-
+SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" );
 </details>
 
 ## Table - Orders
