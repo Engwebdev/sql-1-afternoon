@@ -375,7 +375,7 @@ SELECT FirstName, LastName, Min(BirthDate) FROM Employee;
 ```
 
 </details>
-
+SELECT FirstName, LastName, MIN(BirthDate) FROM Employee;
 <details>
 
 <summary> <code> #4 </code> </summary>
