@@ -456,7 +456,7 @@ SELECT * FROM Invoice WHERE Total > 5;
 ```
 
 </details>
-
+SELECT count(*) FROM Invoice WHERE total > 5;
 <details>
 
 <summary> <code> #5 </code> </summary>
@@ -466,7 +466,7 @@ SELECT COUNT(*) FROM Invoice WHERE Total < 5;
 ```
 
 </details>
-SELECT count(*) FROM Invoice WHERE total > 5;
+SELECT count(*) FROM Invoice WHERE total < 5;
 <details>
 
 <summary> <code> #6 </code> </summary>
