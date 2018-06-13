@@ -486,7 +486,7 @@ SELECT AVG(Total) FROM Invoice;
 ```
 
 </details>
-
+SELECT AVG(Total) FROM Invoice;
 <details>
 
 <summary> <code> #8 </code> </summary>
