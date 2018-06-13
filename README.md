@@ -355,7 +355,7 @@ SELECT FirstName, LastName FROM Employee WHERE City = "Calgary";
 ```
 
 </details>
-
+SELECT FirstName, LastName FROM Employee WHERE City="Calgary";
 <details>
 
 <summary> <code> #2 </code> </summary>
