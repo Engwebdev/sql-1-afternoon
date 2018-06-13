@@ -136,7 +136,7 @@ SELECT * FROM Person WHERE FavoriteColor != "red";
 ```
 
 </details>
-
+SELECT * FROM Person WHERE FavoriteColor != "red";
 <details>
 
 <summary> <code> #11 </code> </summary>
