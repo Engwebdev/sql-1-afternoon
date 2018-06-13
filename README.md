@@ -33,6 +33,66 @@ Use [www.sqlteaching.com](http://www.sqlteaching.com/) or [sqlbolt.com](http://s
 
 ### Solution
 
+###Question 1
+
+CREATE TABLE Person (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+Name string,
+Age integer,
+Height integer,
+City string,
+FavoriteColor string
+);
+
+###question 2
+
+INSERT INTO Person (Name, Height, City, FavoriteColor)
+VALUES("Dean", 32, "Michigan", "Orange");
+
+INSERT INTO PERSON (Name, Height, City, FavoriteColor)
+VALUES("Eli", 33, "Michigan", "black");
+
+INSERT INTO PERSON (Name, Height, City, FavoriteColor)
+VALUES("Joad", 33, "Dallas", "White");
+
+INSERT INTO PERSON (Name, Height, City, FavoriteColor)
+VALUES("PK", 40, "LA", "balck");
+
+INSERT INTO PERSON (Name, Height, City, FavoriteColor)
+VALUES("Tanya", 20, "Lansing", "white");
+###question 3
+
+select \* from Person Order by Height Desc;
+
+###question 4
+select \* from Person Order by Height Asc;
+
+###question 5
+
+select \* from Person order by Age desc;
+
+###question 6
+
+select \* from Person where Age > 20;
+
+###question 7
+select \* from Person where Age = 18;
+
+###question 8
+select _ from Person where Age < 20 OR Age > 30;
+###question 9
+select _ from Person where Age != 27;
+###question 10
+select _ from Person where FavoriteColor !="red";
+###question 11
+select _ from Person where FavoriteColor != "red" AND FavoriteColor != "blue";
+###question 12
+select _ from Person where FavoriteColor = "orange" or FavoriteColor = "green";
+###question 13
+select _ from Person where FavoriteColor IN ("orange", "green", "blue")
+###question 14
+select \* from Person where FavoriteColor IN ("yellow", "purple")
+
 <details>
 
 <summary> <code> SQL Solutions </code> </summary>
@@ -46,7 +106,7 @@ CREATE TABLE Person ( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age int
 ```
 
 </details>
-CREATE TABLE Person( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age integer, Height integer, City string, FavoriteColor string );
+
 <details>
 
 <summary> <code> #2 </code> </summary>
@@ -56,7 +116,7 @@ INSERT INTO Person ( Name, Age, Height, City, FavoriteColor ) VALUES ( "First La
 ```
 
 </details>
-INSERT INTO Person ( Name, Age, Height, City, FavoriteColor ) VALUES ( "Dean", 32, 180, "Royel Oak", "Orange" );
+
 <details>
 
 <summary> <code> #3 </code> </summary>
@@ -66,7 +126,7 @@ SELECT * FROM Person ORDER BY Height DESC;
 ```
 
 </details>
-SELECT * FROM Person ORDER BY Height DESC;
+
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -76,7 +136,7 @@ SELECT * FROM Person ORDER BY Height ASC;
 ```
 
 </details>
-SELECT * FROM Person ORDER BY Height ASC
+
 <details>
 
 <summary> <code> #5 </code> </summary>
@@ -86,7 +146,7 @@ SELECT * FROM Person ORDER BY Age DESC;
 ```
 
 </details>
-SELECT * FROM Person ORDER BY Age DESC
+
 <details>
 
 <summary> <code> #6 </code> </summary>
@@ -96,7 +156,7 @@ SELECT * FROM Person WHERE Age > 20;
 ```
 
 </details>
-SELECT * FROM Person WHERE Age > 20
+
 <details>
 
 <summary> <code> #7 </code> </summary>
@@ -106,7 +166,7 @@ SELECT * FROM Person WHERE Age = 18;
 ```
 
 </details>
-SELECT * FROM Person WHERE Age = 18;
+
 <details>
 
 <summary> <code> #8 </code> </summary>
@@ -116,7 +176,7 @@ SELECT * FROM Person WHERE Age < 20 OR Age > 30;
 ```
 
 </details>
-SELECT * FROM Person WHERE Age < 20  OR  Age > 30;
+
 <details>
 
 <summary> <code> #9 </code> </summary>
@@ -126,7 +186,7 @@ SELECT * FROM Person WHERE Age != 27;
 ```
 
 </details>
-SELECT * FROM Person WHERE Age != 27;
+
 <details>
 
 <summary> <code> #10 </code> </summary>
@@ -136,7 +196,7 @@ SELECT * FROM Person WHERE FavoriteColor != "red";
 ```
 
 </details>
-SELECT * FROM Person WHERE FavoriteColor != "red";
+
 <details>
 
 <summary> <code> #11 </code> </summary>
@@ -146,7 +206,7 @@ SELECT * FROM Person WHERE FavoriteColor != "red" AND FavoriteColor != "blue";
 ```
 
 </details>
-SELECT * FROM Person WHERE FavoriteColor != "red" AND FavoriteColor != "blue";
+
 <details>
 
 <summary> <code> #12 </code> </summary>
@@ -156,7 +216,7 @@ SELECT * FROM Person WHERE FavoriteColor = "orange" OR FavoriteColor = "green";
 ```
 
 </details>
-SELECT * FROM Person WHERE FavoriteColor = "orange" OR FavoriteColor = "green";
+
 <details>
 
 <summary> <code> #13 </code> </summary>
@@ -166,7 +226,7 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "orange", "green", "blue" );
 ```
 
 </details>
-SELECT * FROM Person WHERE FavoriteColor IN ( "orange", "green", "blue" );
+
 <details>
 
 <summary> <code> #14 </code> </summary>
@@ -176,7 +236,7 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" )
 ```
 
 </details>
-SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" );
+
 </details>
 
 ## Table - Orders
@@ -192,7 +252,27 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" );
 5.  Calculate the total order price.
 6.  Calculate the total order price by a single PersonID.
 
-### Solution
+### Solutions
+
+create table Orders(
+PersonID INTEGER PRIMARY KEY AUTOINCREMENT,
+ProductName string
+ProductPrice float
+Quantity integer
+)
+INSERT INTO Orders (
+ProductName,
+ProductPrice,
+Quantity
+) VALUES ("Rice", 9.99, 10 );
+
+select \* from Orders;
+
+select sum(Quantity) from Orders;
+
+select sum(ProductPrice \* Quantity) from Orders;
+
+select SUM(ProductPrice \* Quantity) from Orders where PersonID = 1;
 
 <details>
 
@@ -207,7 +287,7 @@ CREATE TABLE Orders ( PersonID integer, ProductName string, ProductPrice float, 
 ```
 
 </details>
-CREATE TABLE Orders ( PersonID integer, ProductName string, ProductPrice float, Quantity integer );
+
 <details>
 
 <summary> <code> #2 </code> </summary>
@@ -217,7 +297,7 @@ INSERT INTO Orders ( PersonID, ProductName, ProductPrice, Quantity ) VALUES ( 0,
 ```
 
 </details>
-INSERT INTO Orders (  PersonID, ProductName, ProductPrice, Quantity ) VALUES ( 10, "banana", 1, 21 );
+
 <details>
 
 <summary> <code> #3 </code> </summary>
@@ -227,7 +307,7 @@ SELECT * FROM Orders;
 ```
 
 </details>
-SELECT * FROM Orders;
+
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -237,7 +317,7 @@ SELECT SUM(Quantity) FROM Orders;
 ```
 
 </details>
-SELECT  SUM(Quantity) FROM Orders;
+
 <details>
 
 <summary> <code> #5 </code> </summary>
@@ -247,7 +327,7 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders;
 ```
 
 </details>
-SELECT  SUM(Quantity * ProductPrice) FROM Orders;
+
 <details>
 
 <summary> <code> #6 </code> </summary>
@@ -258,7 +338,7 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID = 0;
 ```
 
 </details>
-SELECT  SUM(Quantity * ProductPrice) FROM Orders WHERE PersonalID=10;
+
 </details>
 
 ## Table - Artist
@@ -273,6 +353,16 @@ SELECT  SUM(Quantity * ProductPrice) FROM Orders WHERE PersonalID=10;
 
 ### Solution
 
+insert into Artist(Name) values ("P!nk")
+
+select \* from Artist order by Name Desc limit 10;
+
+select \* from Artist order by Name Asc limit 5;
+
+select \* from Artist where Name like 'Black%';
+
+select \* from Artist where Name like '%Black%';
+
 <details>
 
 <summary> <code> SQL Solutions </code> </summary>
@@ -286,7 +376,7 @@ INSERT INTO Artist ( Name ) VALUES ( 'artist name' );
 ```
 
 </details>
-INSERT INTO Artist ( Name ) VALUES ( "P!nk" );
+
 <details>
 
 <summary> <code> #2 </code> </summary>
@@ -296,7 +386,7 @@ SELECT * FROM Artist ORDER BY Name Desc LIMIT 10;
 ```
 
 </details>
-SELECT * FROM Artist ORDER BY Name DESC LIMIT 10;
+
 <details>
 
 <summary> <code> #3 </code> </summary>
@@ -306,7 +396,7 @@ SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
 ```
 
 </details>
-SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
+
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -316,7 +406,7 @@ SELECT * FROM Artist WHERE Name LIKE 'Black%';
 ```
 
 </details>
-SELECT * FROM Artist WHERE Name LIKE "Black%";
+
 <details>
 
 <summary> <code> #5 </code> </summary>
@@ -326,7 +416,7 @@ SELECT * FROM Artist WHERE Name LIKE '%Black%';
 ```
 
 </details>
-SELECT * FROM Artist WHERE Name LIKE "%Black%";
+
 </details>
 
 ## Table - Employee
@@ -342,6 +432,16 @@ SELECT * FROM Artist WHERE Name LIKE "%Black%";
 
 ### Solution
 
+select FirstName, LastName from Employee where City = "Calgary"
+
+select FirstName, LastName, max(BirthDate) from Employee
+
+select FirstName, LastName, min(BirthDate) from Employee
+
+select \* from Employee where ReportsTo = 2;
+
+select count(\*) from Employee where City = "Lethbridge";
+
 <details>
 
 <summary> <code> SQL Solutions </code> </summary>
@@ -355,7 +455,7 @@ SELECT FirstName, LastName FROM Employee WHERE City = "Calgary";
 ```
 
 </details>
-SELECT FirstName, LastName FROM Employee WHERE City="Calgary";
+
 <details>
 
 <summary> <code> #2 </code> </summary>
@@ -365,7 +465,7 @@ SELECT FirstName, LastName, Max(BirthDate) FROM Employee;
 ```
 
 </details>
-SELECT FirstName, LastName, MAX(BirthDate) FROM Employee;
+
 <details>
 
 <summary> <code> #3 </code> </summary>
@@ -375,7 +475,7 @@ SELECT FirstName, LastName, Min(BirthDate) FROM Employee;
 ```
 
 </details>
-SELECT FirstName, LastName, MIN(BirthDate) FROM Employee;
+
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -395,7 +495,7 @@ SELECT COUNT(*) FROM Employee WHERE City = "Lethbridge";
 ```
 
 </details>
-SELECT count(*) FROM Employee WHERE City="Lethbridge";
+
 </details>
 
 ## Table - Invoice
@@ -413,6 +513,20 @@ SELECT count(*) FROM Employee WHERE City="Lethbridge";
 
 ### Solution
 
+select count(\*) from Invoice where BillingCountry = 'USA';
+
+SELECT Max(total) FROM Invoice;
+
+SELECT Min(total) FROM Invoice;
+
+SELECT \* FROM Invoice WHERE Total > 5;
+
+SELECT COUNT(\*) FROM Invoice WHERE Total < 5;
+
+SELECT Count(\*) FROM Invoice WHERE BillingState in ('CA', 'TX', 'AZ');
+
+SELECT AVG(Total) FROM Invoice;
+
 <details>
 
 <summary> <code> SQL Solutions </code> </summary>
@@ -426,7 +540,7 @@ SELECT Count(*) FROM Invoice WHERE BillingCountry = 'USA';
 ```
 
 </details>
-SELECT count(*) FROM Invoice WHERE BillingCountry = 'USA';
+
 <details>
 
 <summary> <code> #2 </code> </summary>
@@ -436,7 +550,7 @@ SELECT Max(total) FROM Invoice;
 ```
 
 </details>
-SELECT MAX(total) FROM Invoice;
+
 <details>
 
 <summary> <code> #3 </code> </summary>
@@ -446,7 +560,7 @@ SELECT Min(total) FROM Invoice;
 ```
 
 </details>
-SELECT MIN(total) FROM Invoice;
+
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -456,7 +570,7 @@ SELECT * FROM Invoice WHERE Total > 5;
 ```
 
 </details>
-SELECT count(*) FROM Invoice WHERE total > 5;
+
 <details>
 
 <summary> <code> #5 </code> </summary>
@@ -466,7 +580,7 @@ SELECT COUNT(*) FROM Invoice WHERE Total < 5;
 ```
 
 </details>
-SELECT count(*) FROM Invoice WHERE total < 5;
+
 <details>
 
 <summary> <code> #6 </code> </summary>
@@ -476,7 +590,7 @@ SELECT Count(*) FROM Invoice WHERE BillingState in ('CA', 'TX', 'AZ');
 ```
 
 </details>
-SELECT Count(*) FROM Invoice WHERE BillingState in ('CA', 'TX', 'AZ');
+
 <details>
 
 <summary> <code> #7 </code> </summary>
@@ -486,7 +600,7 @@ SELECT AVG(Total) FROM Invoice;
 ```
 
 </details>
-SELECT AVG(Total) FROM Invoice;
+
 <details>
 
 <summary> <code> #8 </code> </summary>
@@ -496,7 +610,7 @@ SELECT SUM(Total) FROM Invoice;
 ```
 
 </details>
-SELECT SUM(Total) FROM Invoice;
+
 </details>
 
 ## Contributions
