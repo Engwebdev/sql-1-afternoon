@@ -496,7 +496,7 @@ SELECT SUM(Total) FROM Invoice;
 ```
 
 </details>
-
+SELECT SUM(Total) FROM Invoice;
 </details>
 
 ## Contributions
