@@ -207,7 +207,7 @@ CREATE TABLE Orders ( PersonID integer, ProductName string, ProductPrice float, 
 ```
 
 </details>
-
+CREATE TABLE Orders ( PersonalID integer, ProductName string, ProductPrice float, Quantity integer );
 <details>
 
 <summary> <code> #2 </code> </summary>
