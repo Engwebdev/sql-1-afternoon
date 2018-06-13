@@ -227,7 +227,7 @@ SELECT * FROM Orders;
 ```
 
 </details>
-
+SELECT * FROM Orders;
 <details>
 
 <summary> <code> #4 </code> </summary>
