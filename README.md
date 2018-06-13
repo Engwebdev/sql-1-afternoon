@@ -106,7 +106,7 @@ SELECT * FROM Person WHERE Age = 18;
 ```
 
 </details>
-
+SELECT * FROM Person WHERE Age = 18;
 <details>
 
 <summary> <code> #8 </code> </summary>
