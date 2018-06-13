@@ -4,7 +4,7 @@
 
 In this project we will be practicing inserting and querying data using SQL. We'll make use of a handy online tool called Chinook that we'll use to write SQL online. <a href="http://jxs.me/chinook-web/">Click me</a>
 
-On the left are the Tables with their fields, the right is where we will be writing our queries, and the bottom is where we will see our results.  
+On the left are the Tables with their fields, the right is where we will be writing our queries, and the bottom is where we will see our results.
 
 Any new tables or records that we add into the database will be removed after you refresh the page.
 
@@ -13,17 +13,18 @@ Use [www.sqlteaching.com](http://www.sqlteaching.com/) or [sqlbolt.com](http://s
 ## Table - People
 
 ### Instructions
-1. Create a table called Person that records a person's ID, Name, Age, Height ( in cm ), City, FavoriteColor. 
-    * ID should be an auto-incrementing id/primary key - Use type: INTEGER PRIMARY KEY AUTOINCREMENT
-2. Add 5 different people into the Person database. 
-    * Remember to not include the ID because it should auto-increment.
-3. List all the people in the Person table by Height from tallest to shortest.
-4. List all the people in the Person table by Height from shortest to tallest.
-5. List all the people in the Person table by Age from oldest to youngest.
-6. List all the people in the Person table older than age 20.
-7. List all the people in the Person table that are exactly 18.
-8. List all the people in the Person table that are less than 20 and older than 30.
-9. List all the people in the Person table that are not 27 (Use not equals).
+
+1.  Create a table called Person that records a person's ID, Name, Age, Height ( in cm ), City, FavoriteColor.
+    - ID should be an auto-incrementing id/primary key - Use type: INTEGER PRIMARY KEY AUTOINCREMENT
+2.  Add 5 different people into the Person database.
+    - Remember to not include the ID because it should auto-increment.
+3.  List all the people in the Person table by Height from tallest to shortest.
+4.  List all the people in the Person table by Height from shortest to tallest.
+5.  List all the people in the Person table by Age from oldest to youngest.
+6.  List all the people in the Person table older than age 20.
+7.  List all the people in the Person table that are exactly 18.
+8.  List all the people in the Person table that are less than 20 and older than 30.
+9.  List all the people in the Person table that are not 27 (Use not equals).
 10. List all the people in the Person table where their favorite color is not red.
 11. List all the people in the Person table where their favorite color is not red and is not blue.
 12. List all the people in the Person table where their favorite color is orange or green.
@@ -37,7 +38,7 @@ Use [www.sqlteaching.com](http://www.sqlteaching.com/) or [sqlbolt.com](http://s
 <summary> <code> SQL Solutions </code> </summary>
 
 <details>
-
+CREATE TABLE Person( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age integer, Height integer, City string, FavoriteColor string );
 <summary> <code> #1 </code> </summary>
 
 ```sql
@@ -182,14 +183,14 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" )
 
 ### Instructions
 
-1. Create a table called Orders that records: PersonID, ProductName, ProductPrice, Quantity.
-2. Add 5 Orders to the Orders table.
-    * Make orders for at least two different people.
-    * PersonID should be different for different people.
-3. Select all the records from the Orders table.
-4. Calculate the total number of products ordered.
-5. Calculate the total order price.
-6. Calculate the total order price by a single PersonID.
+1.  Create a table called Orders that records: PersonID, ProductName, ProductPrice, Quantity.
+2.  Add 5 Orders to the Orders table.
+    - Make orders for at least two different people.
+    - PersonID should be different for different people.
+3.  Select all the records from the Orders table.
+4.  Calculate the total number of products ordered.
+5.  Calculate the total order price.
+6.  Calculate the total order price by a single PersonID.
 
 ### Solution
 
@@ -264,13 +265,13 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID = 0;
 
 ### Instructions
 
-1. Add 3 new Artists to the Artist table. ( It's already created )
-2. Select 10 artists in reverse alphabetical order.
-3. Select 5 artists in alphabetical order.
-4. Select all artists that start with the word "Black".
-5. Select all artists that contain the word "Black".
+1.  Add 3 new Artists to the Artist table. ( It's already created )
+2.  Select 10 artists in reverse alphabetical order.
+3.  Select 5 artists in alphabetical order.
+4.  Select all artists that start with the word "Black".
+5.  Select all artists that contain the word "Black".
 
-### Solution 
+### Solution
 
 <details>
 
@@ -332,12 +333,12 @@ SELECT * FROM Artist WHERE Name LIKE '%Black%';
 
 ### Instructions
 
-1. List all Employee first and last names only that live in Calgary.
-2. Find the first and last name and birthdate for the youngest employee.
-3. Find the first and last name and birthdate for the oldest employee.
-4. Find everyone that reports to Nancy Edwards (Use the ReportsTo column).
-   * You will need to query the employee table to find the Id for Nancy Edwards
-5. Count how many people live in Lethbridge.
+1.  List all Employee first and last names only that live in Calgary.
+2.  Find the first and last name and birthdate for the youngest employee.
+3.  Find the first and last name and birthdate for the oldest employee.
+4.  Find everyone that reports to Nancy Edwards (Use the ReportsTo column).
+    - You will need to query the employee table to find the Id for Nancy Edwards
+5.  Count how many people live in Lethbridge.
 
 ### Solution
 
@@ -397,18 +398,18 @@ SELECT COUNT(*) FROM Employee WHERE City = "Lethbridge";
 
 </details>
 
-## Table - Invoice 
+## Table - Invoice
 
 ### Instructions
 
-1. Count how many orders were made from the USA.
-2. Find the largest order total amount.
-3. Find the smallest order total amount.
-4. Find all orders bigger than $5.
-5. Count how many orders were smaller than $5.
-6. Count how many orders were in CA, TX, or AZ (use IN).
-7. Get the average total of the orders.
-8. Get the total sum of the orders.
+1.  Count how many orders were made from the USA.
+2.  Find the largest order total amount.
+3.  Find the smallest order total amount.
+4.  Find all orders bigger than $5.
+5.  Count how many orders were smaller than $5.
+6.  Count how many orders were in CA, TX, or AZ (use IN).
+7.  Get the average total of the orders.
+8.  Get the total sum of the orders.
 
 ### Solution
 
@@ -509,4 +510,3 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 <p align="center">
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
 </p>
-
