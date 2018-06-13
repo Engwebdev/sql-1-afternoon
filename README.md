@@ -116,7 +116,7 @@ SELECT * FROM Person WHERE Age < 20 OR Age > 30;
 ```
 
 </details>
-
+SELECT * FROM Person WHERE Age < 20  OR  Age > 30;
 <details>
 
 <summary> <code> #9 </code> </summary>
@@ -128,7 +128,7 @@ SELECT * FROM Person WHERE Age != 27;
 </details>
 
 <details>
-
+SELECT * FROM Person WHERE Age != 27;
 <summary> <code> #10 </code> </summary>
 
 ```sql
