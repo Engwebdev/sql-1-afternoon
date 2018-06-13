@@ -446,7 +446,7 @@ SELECT Min(total) FROM Invoice;
 ```
 
 </details>
-
+SELECT MIN(total) FROM Invoice;
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -466,7 +466,7 @@ SELECT COUNT(*) FROM Invoice WHERE Total < 5;
 ```
 
 </details>
-
+SELECT count(*) FROM Invoice WHERE total > 5;
 <details>
 
 <summary> <code> #6 </code> </summary>
