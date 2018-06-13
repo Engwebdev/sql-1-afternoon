@@ -247,7 +247,7 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders;
 ```
 
 </details>
-
+SELECT  SUM(Quantity * ProductPrice) FROM Orders;
 <details>
 
 <summary> <code> #6 </code> </summary>
