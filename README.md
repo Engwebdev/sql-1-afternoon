@@ -365,7 +365,7 @@ SELECT FirstName, LastName, Max(BirthDate) FROM Employee;
 ```
 
 </details>
-
+SELECT FirstName, LastName, MAX(BirthDate) FROM Employee;
 <details>
 
 <summary> <code> #3 </code> </summary>
