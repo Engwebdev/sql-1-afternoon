@@ -306,7 +306,7 @@ SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
 ```
 
 </details>
-
+SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
 <details>
 
 <summary> <code> #4 </code> </summary>
@@ -316,7 +316,7 @@ SELECT * FROM Artist WHERE Name LIKE 'Black%';
 ```
 
 </details>
-
+SELECT * FROM Artist WHERE Name LIKE "Black%";
 <details>
 
 <summary> <code> #5 </code> </summary>
