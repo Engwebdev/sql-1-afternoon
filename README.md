@@ -126,9 +126,9 @@ SELECT * FROM Person WHERE Age != 27;
 ```
 
 </details>
-
-<details>
 SELECT * FROM Person WHERE Age != 27;
+<details>
+
 <summary> <code> #10 </code> </summary>
 
 ```sql
@@ -146,7 +146,7 @@ SELECT * FROM Person WHERE FavoriteColor != "red" AND FavoriteColor != "blue";
 ```
 
 </details>
-
+SELECT * FROM Person WHERE FavoriteColor != "red" AND FavoriteColor != "blue";
 <details>
 
 <summary> <code> #12 </code> </summary>
