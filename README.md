@@ -48,7 +48,7 @@ CREATE TABLE Person ( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age int
 </details>
 
 <details>
-
+INSERT INTO Person ( Name, Age, Height, City, FavoriteColor ) VALUES ( "Dean", 32, 180, "Royel Oak", "Million Dollor Baby" );
 <summary> <code> #2 </code> </summary>
 
 ```sql
