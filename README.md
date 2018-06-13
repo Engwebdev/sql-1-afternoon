@@ -156,7 +156,7 @@ SELECT * FROM Person WHERE FavoriteColor = "orange" OR FavoriteColor = "green";
 ```
 
 </details>
-
+SELECT * FROM Person WHERE FavoriteColor = "orange" OR FavoriteColor = "green";
 <details>
 
 <summary> <code> #13 </code> </summary>
@@ -166,7 +166,7 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "orange", "green", "blue" );
 ```
 
 </details>
-
+SELECT * FROM Person WHERE FavoriteColor IN ( "orange", "green", "blue" );
 <details>
 
 <summary> <code> #14 </code> </summary>
