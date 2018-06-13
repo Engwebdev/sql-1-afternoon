@@ -38,7 +38,7 @@ Use [www.sqlteaching.com](http://www.sqlteaching.com/) or [sqlbolt.com](http://s
 <summary> <code> SQL Solutions </code> </summary>
 
 <details>
-CREATE TABLE Person( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age integer, Height integer, City string, FavoriteColor string );
+
 <summary> <code> #1 </code> </summary>
 
 ```sql
@@ -46,9 +46,9 @@ CREATE TABLE Person ( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age int
 ```
 
 </details>
-
+CREATE TABLE Person( ID INTEGER PRIMARY KEY AUTOINCREMENT, Name string, Age integer, Height integer, City string, FavoriteColor string );
 <details>
-INSERT INTO Person ( Name, Age, Height, City, FavoriteColor ) VALUES ( "Dean", 32, 180, "Royel Oak", "Million Dollor Baby" );
+
 <summary> <code> #2 </code> </summary>
 
 ```sql
@@ -56,7 +56,7 @@ INSERT INTO Person ( Name, Age, Height, City, FavoriteColor ) VALUES ( "First La
 ```
 
 </details>
-
+INSERT INTO Person ( Name, Age, Height, City, FavoriteColor ) VALUES ( "Dean", 32, 180, "Royel Oak", "Orange" );
 <details>
 
 <summary> <code> #3 </code> </summary>
@@ -66,7 +66,7 @@ SELECT * FROM Person ORDER BY Height DESC;
 ```
 
 </details>
-
+SELECT * FROM Person ORDER BY Height DESC;
 <details>
 
 <summary> <code> #4 </code> </summary>
